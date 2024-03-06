@@ -10,7 +10,7 @@ const Location = () => {
     const dispatch = useDispatch();
 
 
-    const API_KEY = "a07e04b484e939163e460aef2c19f501";
+    const API_KEY = "a07e04b484e939163e460aef2c";
     const fetchCityData = async () => {
         try{
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityNameLatLot}&appid=${API_KEY}&units=metric`);
