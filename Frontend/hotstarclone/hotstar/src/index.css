@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@font-face {
+    font-family: "newfont";   /*Can be any text*/
+    src: local("SFPRODISPLAYHEAVYITALIC"),
+      url("./fonts/SFPRODISPLAYHEAVYITALIC.OTF") format("woff");
+  }
+

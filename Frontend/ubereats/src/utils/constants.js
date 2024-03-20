@@ -1,0 +1,1 @@
+export const LOGO = "https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/97c43f8974e6c876.svg";
