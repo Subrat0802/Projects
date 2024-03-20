@@ -4,6 +4,8 @@ import toggleLocation  from "./toggleSlice"
 import addLatLot from "./resSlice" 
 import addMenuData from "./resSlice"
 import addCartData from "./cartItemsSlice"
+import addCityName from "./resSlice"
+import addGptSuggetions from "./gptSlice"
 
 const appStore = configureStore({
     reducer: {
@@ -12,6 +14,8 @@ const appStore = configureStore({
         latlotReducer: addLatLot,
         menuDataReducer: addMenuData,
         cartItemsReducer : addCartData,
+        cityNameReducer : addCityName,
+        gptSuggetionReducer: addGptSuggetions
     }
 })
 

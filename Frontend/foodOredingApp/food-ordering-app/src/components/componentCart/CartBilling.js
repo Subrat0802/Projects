@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const CartBilling = () => {
   const cartItems =
@@ -61,9 +62,9 @@ const CartBilling = () => {
           <input name="payment" type="radio" value="wallet" /> <label htmlFor="payment">Wallet</label>
         </div>
       </div>
-      <button className="hover:bg-[#205531] w-full py-3 mt-4 text-2xl font-semibold rounded-lg bg-[#00C544] hover:underline-offset-1">
-        PAY ₹{(totalBill + 15 + 5.003 + 13.94).toFixed(2)}
-      </button>
+      <Link to={"/orderconfirm"}><button className="hover:bg-[#205531] w-full py-3 mt-4 text-2xl font-semibold rounded-lg bg-[#00C544] hover:underline-offset-1">
+        Order Now! || PAY ₹{(totalBill + 15 + 5.003 + 13.94).toFixed(2)}
+      </button></Link>
     </div>
   );
 };

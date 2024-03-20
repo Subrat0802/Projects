@@ -2,30 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+.btn{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 14px;
+color: #fff;
+background: linear-gradient(90deg, #20B05F 0%, #27302F 100%);
+padding: 10px 30px;
+border: 2px solid #27302F;
+box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+}
+
+.btn:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #27302F 0%, #20B05F 100%);
+color: #b0f3b9;
+border: solid 2px #0066cc;
+}
+
+
+
+
+
 .spinner {
     width: 56px;
     height: 56px;
     display: grid;
-    animation: spinner-plncf9 4s infinite;
+    color: #20B05F;
+    background: radial-gradient(farthest-side, currentColor calc(100% - 6.7px),#0000 calc(100% - 5.6px) 0);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 14.6px),#000 calc(100% - 13.4px));
+    border-radius: 50%;
+    animation: spinner-sm4bhi 2s infinite linear;
  }
  
  .spinner::before,
  .spinner::after {
     content: "";
     grid-area: 1/1;
-    border: 9px solid;
-    border-radius: 50%;
-    border-color: #474bff #474bff #0000 #0000;
-    mix-blend-mode: darken;
-    animation: spinner-plncf9 1s infinite linear;
+    background: linear-gradient(currentColor 0 0) center,
+           linear-gradient(currentColor 0 0) center;
+    background-size: 100% 11.2px,11.2px 100%;
+    background-repeat: no-repeat;
  }
  
  .spinner::after {
-    border-color: #0000 #0000 #dbdcef #dbdcef;
-    animation-direction: reverse;
+    transform: rotate(45deg);
  }
  
- @keyframes spinner-plncf9 {
+ @keyframes spinner-sm4bhi {
     100% {
        transform: rotate(1turn);
     }

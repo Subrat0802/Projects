@@ -6,6 +6,7 @@ const resData = createSlice({
         allRestaurants: null,
         latlot: null,
         menuData: null,
+        cityName:null
     },
     reducers:{
         addAllRestaurants : (state, action) => {
@@ -16,10 +17,13 @@ const resData = createSlice({
         },
         addMenuData: (state, action) => {
             state.menuData = action.payload
+        },
+        addCityName: (state, action) => {
+            state.cityName = action.payload
         }
 
     }
 })
 
-export const {addAllRestaurants, addLatLot, addMenuData} = resData.actions;
+export const {addAllRestaurants, addLatLot, addMenuData, addCityName} = resData.actions;
 export default resData.reducer;

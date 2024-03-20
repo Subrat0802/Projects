@@ -8,6 +8,8 @@ import MenuPage from "./pages/MenuPage";
 import { Provider } from "react-redux";
 import appStore from "./utils/reduxStore/appStore";
 import CartPage from "./pages/CartPage";
+import UberGpt from "./pages/UberGpt";
+import OrderCon from "./pages/OrderCon";
 
 const AppLayout = () => {
   return (
@@ -37,7 +39,16 @@ const appRouter = createBrowserRouter([
         path: "/cart",
         element: <CartPage />,
       },
+      
     ],
+  },
+  {
+    path: "/orderconfirm",
+        element: <OrderCon />,
+  },
+  {
+    path: "/uberGPT",
+    element: <Provider store={appStore}><UberGpt /></Provider>,
   },
 ]);
 
