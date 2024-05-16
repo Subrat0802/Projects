@@ -8,7 +8,7 @@ const Location = () => {
     const [cityNameLatLot, setCityNameLatLot] = useState("Bhopal"); // Default city
     const dispatch = useDispatch();
 
-    const API_KEY = "";
+    const API_KEY = "ADD YOUr API";
     
     const fetchCityData = async () => {
         try {
