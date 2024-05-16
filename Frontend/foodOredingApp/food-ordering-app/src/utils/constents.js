@@ -10,7 +10,7 @@ export const LOGO = "https://logos-world.net/wp-content/uploads/2020/11/Uber-Eat
 
 
 
-export const RESTAURANTS_API = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2356379&lng=77.439472&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const RESTAURANTS_API = "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.2356379&lng=77.439472&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 
 export const OPENAI_KEY = "USE YOUR API_KEY"

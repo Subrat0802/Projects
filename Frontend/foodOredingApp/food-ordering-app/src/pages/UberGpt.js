@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import openai from "../utils/openai";
 import { useDispatch, useSelector } from "react-redux";
 import { addGptSuggetions } from "../utils/reduxStore/gptSlice";
-//COVCELQ4KIDQvb++7am4VzCnEzgD"
+
 
 const UberGpt = () => {
   const searchText = useRef(null);

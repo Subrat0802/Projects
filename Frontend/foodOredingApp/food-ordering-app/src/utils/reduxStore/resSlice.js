@@ -21,7 +21,6 @@ const resData = createSlice({
         addCityName: (state, action) => {
             state.cityName = action.payload
         }
-
     }
 })
 

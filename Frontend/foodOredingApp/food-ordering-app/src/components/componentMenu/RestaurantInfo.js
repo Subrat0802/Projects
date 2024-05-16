@@ -69,7 +69,6 @@ const RestaurantInfo = () => {
               data={el.card?.card}
               showItems={index === showIndex ? true : false}
               showIndex
-            //   itemLength={restaurantData.length}
               setShowIndex={() => setShowIndex(showIndex === null ? index : null)}
             />
           );

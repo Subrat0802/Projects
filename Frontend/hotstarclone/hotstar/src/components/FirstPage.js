@@ -9,6 +9,9 @@ import { Link } from "react-router-dom";
 const FirstPage = () => {
   return (
     <div className="overflow-x-hidden no-scrollbar ">
+
+      
+
       <Navbar />
       <BackgroudVideo />
       <div className="w-full   z-2 -mt-20 absolute bg-black">

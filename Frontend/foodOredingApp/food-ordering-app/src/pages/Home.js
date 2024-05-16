@@ -17,7 +17,7 @@ const Home = () => {
     (store) => store.toggleLocationSideBar.showLocationSideBar
   );
   const latlot = useSelector((store) => store.latlotReducer.latlot);
-  console.log(latlot);
+  console.log(foodSuggetion);
 
   const fetchApi = async () => {
     try {
